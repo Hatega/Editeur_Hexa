@@ -26,8 +26,10 @@ class HttpEditorWindow(QMainWindow):
         #Zone du contenu Hexadécimal et UTF-8
         self.hexa_label = QLabel("Hexadécimal:")
         self.hexa_text = QTextEdit()
+        self.hexa_text.setReadOnly(True)
         self.ascii_label = QLabel("Réponse:")
         self.ascii_text = QTextEdit()
+        self.ascii_text.setReadOnly(True)
 
         #Zone d'info sur la requête HTTP
         self.info_label = QLabel("Info:")
